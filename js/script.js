@@ -25,9 +25,13 @@ function getNumberInfo() {
     sumSquareDifference(20) returns 41230
 */
 function sumSquareDifference(n) {
-    let sumSquares = n * (n+1) * ((2*n) + 1) / 6;
-    let squareSum = (n * (n+1) / 2) ** 2;
-    return Math.floor(squareSum - sumSquares);
+    let sumSquares = 0;
+    let sumInts = 0;
+    for (let i=1;i<=n;i++) {
+        sumSquares += (i*i);
+        sumInts += i;
+    }
+    return (sumInts**2) - sumSquares;
 }
 
 // Function to Clear Information
