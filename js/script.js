@@ -26,8 +26,8 @@ function getNumberInfo() {
 */
 function sumSquareDifference(n) {
     let sumSquares = (n)*(n+1)*((2*n)+1);
-    let sumInts = (n*(n+1))/2;
-    return (sumInts**2) - sumSquares;
+    let sumInts = (n)*(n+1)*(0.5);
+    return (sumInts**2) - (sumSquares);
 }
 
 // Function to Clear Information
