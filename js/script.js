@@ -9,8 +9,8 @@ function getNumberInfo() {
         txt += `Invalid Input.  Please enter a whole number between 1 and 200.`;
     } else {
         txt += `You have entered the number ${num}. <p>`;
-        txt += `The difference between the sum of the squares <p>`;
-        txt += `of the first ${num} natural numbers and the <p>`;
+        txt += `The difference between the sum of the squares`;
+        txt += `of the first ${num} natural numbers and the`;
         txt += `square of the sum is ${sumSquareDifference(num)}.`;
     }
 
@@ -25,8 +25,8 @@ function getNumberInfo() {
     sumSquareDifference(20) returns 41230
 */
 function sumSquareDifference(n) {
-    let sumSquares = Array(n).fill(0).map((e,i) => (i+1) ** 2).reduce((p,c) => p+c, 0);
-    let sumInts = Array(n).fill(0).map((e,i) => (i+1)).reduce((p,c) => p+c, 0);
+    let sumSquares = (n)*(n+1)+((2*n)+1);
+    let sumInts = (n*(n+1))/2;
     return (sumInts**2) - sumSquares;
 }
 
