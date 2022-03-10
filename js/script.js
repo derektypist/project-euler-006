@@ -17,3 +17,15 @@ function getNumberInfo() {
     // Display Information in the Browser
     document.getElementById("numinfo").innerHTML = txt;
 }
+
+/*
+    Function to return the difference between the sum of the squares of
+    the first n natural numbers and the square of the sum
+    sumSquareDifference(10) returns 2640
+    sumSquareDifference(20) returns 41230
+*/
+function sumSquareDifference(n) {
+    let sumSquares = Array(n).fill(0).map((e,i) => (i+1) ** 2).reduce((p,c) => p+c, 0);
+    let sumInts = Array(n).fill(0).map((e,i) => (i+1)).reduce((p,c) => p+c, 0);
+    return (sumInts**2) - sumSquares;
+}
