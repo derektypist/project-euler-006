@@ -26,5 +26,23 @@
         <p>Hence the difference between the sum of the squares and the square of the sum is 3025 - 385 = 2640</p>
         <p>Find the difference between the sum of the squares of the first n natural numbers and the square of the sum.</p>
     </section>
+
+    <!-- Set Up Form -->
+    <section class="container-fluid">
+        <form>
+            <!-- Set Up Label and Input -->
+            <article class="mb-3">
+                <label for="mynumber" class="form-label">Number (Required)</label>
+                <input class="form-control" placeholder="Enter whole number between 1 and 200 (e.g. 10)" title="Enter whole number between 1 and 200 (e.g. 10)" id="mynumber">
+            </article>
+
+            <!-- Set Up and Center Buttons -->
+            <article class="d-grid gap-2 d-flex justify-content-center">
+                <button type="submit" onclick="getNumberInfo()" class="btn btn-info">Submit</button>
+                <button type="reset" onclick="clearInfo()" class="btn btn-warning">Reset</button>
+            </article>
+            
+        </form>
+    </section>
 </body>
 </html>
