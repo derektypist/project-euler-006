@@ -29,3 +29,9 @@ function sumSquareDifference(n) {
     let sumInts = Array(n).fill(0).map((e,i) => (i+1)).reduce((p,c) => p+c, 0);
     return (sumInts**2) - sumSquares;
 }
+
+// Function to Clear Information
+function clearInfo() {
+    let txt="";
+    document.getElementById("numinfo").innerHTML = txt;
+}
